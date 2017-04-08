@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="4" maxValueString="15" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity1" inverseName="add" inverseEntity="Entity1" syncable="YES"/>
+    </entity>
+    <entity name="Entity1" representedClassName="Entity1" syncable="YES" codeGenerationType="class">
+        <attribute name="gender" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="Date" minDateTimeInterval="511992060" defaultDateTimeInterval="511992060" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="add" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Entity" inverseName="note" inverseEntity="Entity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Entity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Entity1" positionX="-45" positionY="18" width="128" height="90"/>
+    </elements>
+</model>
